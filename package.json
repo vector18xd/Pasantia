@@ -1,0 +1,35 @@
+{
+  "name": "jardines-armenia",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "axios": "^0.19.2",
+    "roboto-fontface": "*",
+    "vue": "^2.6.11",
+    "vue-pdf": "^4.1.0",
+    "vue-router": "^3.3.4",
+    "vuetify": "^1.5.24",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.12.1",
+    "@vue/cli-service": "^3.12.1",
+    "material-design-icons-iconfont": "^4.0.5",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.1",
+    "tailwindcss": "^3.1.5",
+    "vue-cli-plugin-vuetify": "^0.5.0",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.6.0"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  }
+}
