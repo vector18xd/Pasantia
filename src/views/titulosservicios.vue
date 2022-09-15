@@ -25,8 +25,7 @@
     <!-- CARDS SERVICIOS -->
     <div>
       <div class="row">
-      <div class="row">
-        <div class="column-333 grow">
+        <div class="column-333 grow cardT">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/aliados.png" alt="avatar" />
@@ -36,7 +35,6 @@
                 <p>
                   Diseñado para las familias que solo necesitan el servicio exequial.
                 </p>
-                <h4><br></h4>
                 <div style="padding: 1.7px"><p>TITULO TULIPAN.</p></div>
               </div>
             </v-card-title>
@@ -46,7 +44,7 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow">
+        <div class="column-333 grow cardT">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/aliados.png" alt="avatar" />
@@ -65,7 +63,7 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow">
+        <div class="column-333 grow cardT">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/aliados.png" alt="avatar" />
@@ -83,7 +81,6 @@
             </v-btn>
           </v-card>
         </div>
-      </div>
       </div>
     </div>
   
@@ -139,10 +136,14 @@ export default {};
 .borde{ 
     border: solid 1px #E8AC09 !important;
 }
+
 @media screen and (max-width: 1000px) {
   .column-6 {
     width: 103%;
     text-align: center;
+  }
+  .cardT{
+    height: 28rem;
   }
   .img {
     margin: auto;

@@ -40,13 +40,13 @@
           </h1>
           </a>
         </div>
-      </div>
-      <div class="column-3333">
-        <img src="../assets/logojardinesarmenia.png" style="float: left; width: 38px">
-        <a href="Sede-Sala-Velacion" class="f"><h1 class="h1text">
-          <h4>SALAS DE VELACIÓN JARDINES DE ARMENIA</h4>
-        </h1>
-        </a>
+        <div class="column-3333">
+          <img src="../assets/logojardinesarmenia.png" style="float: left; width: 38px">
+          <a href="Sede-Sala-Velacion" class="f"><h1 class="h1text">
+            <h4>SALAS DE VELACIÓN JARDINES DE ARMENIA</h4>
+          </h1>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -187,10 +187,6 @@ export default {
 @media screen and (max-width: 1000px) {
   .column-33 {
     width: 103%;
-    text-align: center;
-  }
-  .column-333 {
-    width: 70%;
     text-align: center;
   }
   .column-3333 {

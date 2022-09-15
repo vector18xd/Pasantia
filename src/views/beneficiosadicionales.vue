@@ -13,9 +13,68 @@
 
     <!-- CARDS SERVICIOS -->
     <div>
-      <div class="row">
-      <div class="row">
-        <div class="column-333 grow">
+      <div class="row containerB">
+        <div class="column-333 grow cardB">
+          <v-card class="card-estilo elevation-18">
+            <v-avatar size="150" style="margin-top: 10px">
+              <img src="../assets/aliados.png" alt="avatar" />
+            </v-avatar>
+            <v-card-title primary-title>
+              <div style="font-size: 16px">
+                <p>
+                  Al acceder al programa de Bienestar Social “ aliadas para servir” usted y su grupo vinculado al plan de previsión exequial. Resultan beneficiados de descuentos y beneficios especiales en servicios de salud, recreación y turismo.
+                </p>
+                <div style="padding: 1.7px"><p>ASOMAVI ALIADOS PARA SERVIR.</p></div>
+              </div>
+            </v-card-title>
+            <v-btn class="fboton elevation-8" to="asomavialiados">
+              <strong>SABER MÁS</strong>
+            </v-btn>
+          </v-card>
+        </div>
+
+        <div class="column-333 grow cardB">
+          <v-card class="card-estilo elevation-18">
+            <v-avatar size="150" style="margin-top: 10px">
+              <img src="../assets/carrofunebre.png" alt="avatar" />
+            </v-avatar>
+            <v-card-title primary-title >
+              <div style="font-size: 16px">
+                <p>
+                  Se recoge y traslada los cuerpos fallecidos a nivel nacional.
+                </p>
+                <h1><br></h1>
+                <h1><br></h1>
+                <div style="padding: 1.7px"><p>TRASLADO NACIONAL.</p></div>
+              </div>
+            </v-card-title>
+            <v-btn class="fboton elevation-8" to="trasladonacional">
+              <strong>SABER MÁS</strong>
+            </v-btn>
+          </v-card>
+        </div>
+
+        <div class="column-333 grow cardB">
+          <v-card class="card-estilo elevation-18">
+            <v-avatar size="150" style="margin-top: 10px">
+              <img src="../assets/fuego.png" alt="avatar" />
+            </v-avatar>
+            <v-card-title primary-title>
+              <div style="font-size: 16px">
+                <p>
+                  Apoyamos a los cementerios del Quindío  y a la comunidad en la cremación de restos, se incluye la recogida y urna Cenizaria.
+                </p>
+                <h1><br></h1>
+                <h3><br></h3>
+                <div style="padding: 1.7px"><p>CREMACION DE RESTOS.</p></div>
+              </div>
+            </v-card-title>
+            <v-btn class="fboton elevation-8" to="cremacionderestos">
+              <strong>SABER MÁS</strong>
+            </v-btn>
+          </v-card>
+        </div>
+        <div class="column-333 grow cardB">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/avion.png" alt="avatar" />
@@ -25,7 +84,7 @@
                 <p>
                   Servicio que tiene cubrimiento por fallecimiento en el exterior,  se cubre todo el mundo desde el país de residencia hacia el país y ciudad de origen, se puede repatriar cenizas, la expatriación es otra opción.
                 </p>
-                <h1><br></h1>
+                <br>
                 <div style="padding: 1.7px"><p>REPATRIACION POR FALLECIMIENTO.</p></div>
               </div>
             </v-card-title>
@@ -35,7 +94,7 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow">
+        <div class="column-333 grow cardB">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/segurodevida.png" alt="avatar" />
@@ -56,7 +115,7 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow">
+        <div class="column-333 grow cardB">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/mascotas.png" alt="avatar" />
@@ -69,9 +128,6 @@
                     <li>1. Recogida de la Mascota.</li>
                     <li>2. Cobertura todo el Departamento del Quindío.</li>
                     <li>3. Sala, para despedida de la mascota en huellitas al Cielo.</li>
-                    <li>4. Cremación de la Mascota en huellitas al cielo.</li>
-                    <li>5. Registro fotográfico y de video de la llevada de la mascota al Horno.</li>
-                    <li>6. La cenizas de la mascota se entregan en urna.</li>
                 </ul>
                 </p>
                 <div style="padding: 1.7px"><p>PROTECCION EXEQUIAL PARA MASCOTAS.</p></div>
@@ -83,75 +139,92 @@
           </v-card>
         </div>
       </div>
-      </div>
     </div>
-
-        <div>
-      <div class="row">
-      <div class="row">
-        <div class="column-333 grow">
-          <v-card class="card-estilo elevation-18">
-            <v-avatar size="150" style="margin-top: 10px">
-              <img src="../assets/aliados.png" alt="avatar" />
-            </v-avatar>
-            <v-card-title primary-title>
-              <div style="font-size: 16px">
-                <p>
-                  Al acceder al programa de Bienestar Social “ aliadas para servir” usted y su grupo vinculado al plan de previsión exequial. Resultan beneficiados de descuentos y beneficios especiales en servicios de salud, recreación y turismo.
-                </p>
-                <div style="padding: 1.7px"><p>ASOMAVI ALIADOS PARA SERVIR.</p></div>
+    <section class="pt-5" id="sliders">
+      <div class="container">
+        <h1>Responsive Owl carousel</h1>
+        <div class="sliders">
+          <div class="ow-carousel">
+            <div class="slider-card">
+              <div class="d-flex justify-content align-items-center mb-4">
+                <div class="column-333 grow cardB">
+                  <v-card class="card-estilo elevation-18">
+                    <v-avatar size="150" style="margin-top: 10px">
+                      <img src="../assets/aliados.png" alt="avatar" />
+                    </v-avatar>
+                    <v-card-title primary-title>
+                      <div style="font-size: 16px">
+                        <p>
+                          Al acceder al programa de Bienestar Social “ aliadas para servir” usted y su grupo vinculado al plan de previsión exequial. Resultan beneficiados de descuentos y beneficios especiales en servicios de salud, recreación y turismo.
+                        </p>
+                        <div style="padding: 1.7px"><p>ASOMAVI ALIADOS PARA SERVIR.</p></div>
+                      </div>
+                    </v-card-title>
+                    <v-btn class="fboton elevation-8" to="asomavialiados">
+                      <strong>SABER MÁS</strong>
+                    </v-btn>
+                  </v-card>
+                </div>
+                <div class="column-333 grow cardB">
+                  <v-card class="card-estilo elevation-18">
+                    <v-avatar size="150" style="margin-top: 10px">
+                      <img src="../assets/aliados.png" alt="avatar" />
+                    </v-avatar>
+                    <v-card-title primary-title>
+                      <div style="font-size: 16px">
+                        <p>
+                          Al acceder al programa de Bienestar Social “ aliadas para servir” usted y su grupo vinculado al plan de previsión exequial. Resultan beneficiados de descuentos y beneficios especiales en servicios de salud, recreación y turismo.
+                        </p>
+                        <div style="padding: 1.7px"><p>ASOMAVI ALIADOS PARA SERVIR.</p></div>
+                      </div>
+                    </v-card-title>
+                    <v-btn class="fboton elevation-8" to="asomavialiados">
+                      <strong>SABER MÁS</strong>
+                    </v-btn>
+                  </v-card>
+                </div>
+                <div class="column-333 grow cardB">
+                  <v-card class="card-estilo elevation-18">
+                    <v-avatar size="150" style="margin-top: 10px">
+                      <img src="../assets/aliados.png" alt="avatar" />
+                    </v-avatar>
+                    <v-card-title primary-title>
+                      <div style="font-size: 16px">
+                        <p>
+                          Al acceder al programa de Bienestar Social “ aliadas para servir” usted y su grupo vinculado al plan de previsión exequial. Resultan beneficiados de descuentos y beneficios especiales en servicios de salud, recreación y turismo.
+                        </p>
+                        <div style="padding: 1.7px"><p>ASOMAVI ALIADOS PARA SERVIR.</p></div>
+                      </div>
+                    </v-card-title>
+                    <v-btn class="fboton elevation-8" to="asomavialiados">
+                      <strong>SABER MÁS</strong>
+                    </v-btn>
+                  </v-card>
+                </div>
+                <div class="column-333 grow cardB">
+                  <v-card class="card-estilo elevation-18">
+                    <v-avatar size="150" style="margin-top: 10px">
+                      <img src="../assets/aliados.png" alt="avatar" />
+                    </v-avatar>
+                    <v-card-title primary-title>
+                      <div style="font-size: 16px">
+                        <p>
+                          Al acceder al programa de Bienestar Social “ aliadas para servir” usted y su grupo vinculado al plan de previsión exequial. Resultan beneficiados de descuentos y beneficios especiales en servicios de salud, recreación y turismo.
+                        </p>
+                        <div style="padding: 1.7px"><p>ASOMAVI ALIADOS PARA SERVIR.</p></div>
+                      </div>
+                    </v-card-title>
+                    <v-btn class="fboton elevation-8" to="asomavialiados">
+                      <strong>SABER MÁS</strong>
+                    </v-btn>
+                  </v-card>
+                </div>
               </div>
-            </v-card-title>
-            <v-btn class="fboton elevation-8" to="asomavialiados">
-              <strong>SABER MÁS</strong>
-            </v-btn>
-          </v-card>
-        </div>
-
-        <div class="column-333 grow">
-          <v-card class="card-estilo elevation-18">
-            <v-avatar size="150" style="margin-top: 10px">
-              <img src="../assets/carrofunebre.png" alt="avatar" />
-            </v-avatar>
-            <v-card-title primary-title>
-              <div style="font-size: 16px">
-                <p>
-                  Se recoge y traslada los cuerpos fallecidos a nivel nacional.
-                </p>
-                <h1><br></h1>
-                <h1><br></h1>
-                <div style="padding: 1.7px"><p>TRASLADO NACIONAL.</p></div>
-              </div>
-            </v-card-title>
-            <v-btn class="fboton elevation-8" to="trasladonacional">
-              <strong>SABER MÁS</strong>
-            </v-btn>
-          </v-card>
-        </div>
-
-        <div class="column-333 grow">
-          <v-card class="card-estilo elevation-18">
-            <v-avatar size="150" style="margin-top: 10px">
-              <img src="../assets/fuego.png" alt="avatar" />
-            </v-avatar>
-            <v-card-title primary-title>
-              <div style="font-size: 16px">
-                <p>
-                  Apoyamos a los cementerios del Quindío  y a la comunidad en la cremación de restos, se incluye la recogida y urna Cenizaria.
-                </p>
-                <h1><br></h1>
-                <h3><br></h3>
-                <div style="padding: 1.7px"><p>CREMACION DE RESTOS.</p></div>
-              </div>
-            </v-card-title>
-            <v-btn class="fboton elevation-8" to="cremacionderestos">
-              <strong>SABER MÁS</strong>
-            </v-btn>
-          </v-card>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
-    </div>
+    </section>
   
     <div class="text-xs-right">
     <v-btn class="fboton elevation-8 positionbtn" to="AboutUs">
@@ -204,6 +277,22 @@ export default {};
 .borde{ 
     border: solid 1px #E8AC09 !important;
 }
+.cardB{
+  height: 34rem;
+}
+.containerB{
+  flex-wrap: nowrap;
+}
+.sliders{
+  margin-bottom: 20px;
+  position: relative;
+
+}
+.slider .owl-item.active.center .slider-card{
+  transform: scale(1.15);
+  opacity: 1;
+  background-color: #ccc;
+}
 @media screen and (max-width: 1000px) {
   .column-6 {
     width: 103%;
@@ -222,4 +311,38 @@ export default {};
   }
 }
 </style>
+<script >
+console.log("hola");
+ const $ = require('jquery')
+// Lo declaramos globalmente
+  window.$ = $ 
+
+  $(".ow-carousel").owlCarousel({
+    navigation : true,
+    loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    center: true,
+    navText: [
+        "<i class='fa fa-angle-left'></i>",
+        "<i class='fa fa-angle-right'></i>"
+    ],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+  });
+
+
+</script>
 

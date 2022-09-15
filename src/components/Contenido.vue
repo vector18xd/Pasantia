@@ -8,7 +8,7 @@
     
     <!-- POR QUÉ ELEGIRNOS -->
     
-    <div class="container" >
+    <div class="respons" >
       <div class="row">
         <div class="column-33">
           <v-img :src="require('@/assets/elegirnos.png')" class="imagen"></v-img>
@@ -23,22 +23,20 @@
           <p align=" justify">
             <span>Por esta razón la Fundación Parque Cementerio Jardines de Armenia es una entidad de derecho privado perteneciente a la DIÓCESIS DE ARMENIA, con más de 40 años de experiencia en servicios funerarios de primera calidad y con el más completo portafolio de servicios exequiales.</span>
           </p>
+          <p align="justify" class="texto_inicio">
+            Nosotros como Fundación Parque Cementerio Jardines de Armenia promovemos la
+            <span style="font-size:15px">
+              <font color="#12A19B">IGUALDAD, PAZ Y ESPERANZA.</font>
+            </span>Porque creemos que el servicio funerario prestado con los componentes de nuestra misión, visión y valores, debe ser también un espacio para construir la paz y reafirmar la esperanza en la transformación y continuación de la existencia en la vida eterna.
+          </p>
         </div>
       </div>
-      <p align="justify" class="texto_inicio">
-        Nosotros como Fundación Parque Cementerio Jardines de Armenia promovemos la
-        <span
-          style="font-size:15px"
-        >
-          <font color="#12A19B">IGUALDAD, PAZ Y ESPERANZA.</font>
-        </span>Porque creemos que el servicio funerario prestado con los componentes de nuestra misión, visión y valores, debe ser también un espacio para construir la paz y reafirmar la esperanza en la transformación y continuación de la existencia en la vida eterna.
-      </p>
     </div>
 
     <!-- CARDS NOSOTROS, NUESTROS SERVICIOS -->
     <div>
       <div class="Contentrow">
-        <div class="column-333 grow">
+        <div class="column-333 grow" style="    margin-top: 38px;">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/nosotros.png" alt="avatar">
@@ -226,6 +224,8 @@ body {
   float: left;
   width: 33.33333%;
   margin-top: 35px;
+  display: flex;
+  align-items: flex-end;
 }
 .column-333 {
   display: inline-block;
@@ -273,10 +273,20 @@ p{
   color: #70706e;
 }
 /* texto inicio */
-.texto_inicio {
+/* .texto_inicio {
   margin: 15px;
+} */
+.respons {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 @media screen and (max-width: 1000px) {
+  .Contentrow{
+    margin:0;
+  }
   .column-66,
   .column-33 {
     width: 100%;
@@ -285,6 +295,7 @@ p{
   .column-333 {
     width: 70%;
     text-align: center;
+    height: 100%;
   }
   .column-3333 {
     width: 88%;

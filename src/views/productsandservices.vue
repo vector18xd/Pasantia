@@ -18,7 +18,7 @@
     <!-- CARDS SERVICIOS -->
     <div>
       <div class="row">
-        <div class="column-333 grow">
+        <div class="column-333 grow cardP">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/Imagen1.png" alt="avatar" />
@@ -38,7 +38,7 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow">
+        <div class="column-333 grow cardP">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/rosa.png" alt="avatar" />
@@ -58,7 +58,7 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow">
+        <div class="column-333 grow cardP">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/girasol.png" alt="avatar" />
@@ -77,7 +77,7 @@
             </v-btn>
           </v-card>
         </div>
-        <div class="column-333 grow">
+        <div class="column-333 grow cardP">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/orquidea.png" alt="avatar" />
@@ -87,7 +87,6 @@
                 <p>
                   Protección diseñada para cubrir grupos de familias grandes, con un cubrimiento al 100% Nacional.
                 </p>
-                <h4><br></h4>
                 <div style="padding: 1.7px"><p>PLAN PROTECCION ORQUIDEA.</p></div>
               </div>
             </v-card-title>
@@ -97,7 +96,7 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow">
+        <div class="column-333 grow cardP">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/sacerdotal.jpg" alt="avatar" />
@@ -117,7 +116,7 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow">
+        <div class="column-333 grow cardP">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/diocesanas.png" alt="avatar" />
@@ -135,7 +134,7 @@
             </v-btn>
           </v-card>
         </div>
-        <div class="column-333 grow">
+        <div class="column-333 grow cardP">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/multiplan.png" alt="avatar" />
@@ -155,18 +154,20 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow">
+        <div class="column-333 grow cardP">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/permanencia.png" alt="avatar" />
             </v-avatar>
             <v-card-title primary-title>
               <div style="font-size: 16px">
+                <h4><br></h4>
                 <p>
                   Plan diseñado para  retirados o pensionados de las diferentes empresas que ya tienen protección con la fundación.
                 </p>
                 <div style="padding: 1.7px"><p>PLAN PROTECCION PERMANENCIA.</p></div>
               </div>
+
             </v-card-title>
             <v-btn class="fboton elevation-8" to="planpermanencia">
               <strong>SABER MÁS</strong>
@@ -231,6 +232,9 @@ export default {};
     display: flex;
     align-content: center;
     flex-wrap: wrap;
+}
+.cardP{
+  padding: 15px;
 }
 @media screen and (max-width: 1000px) {
   .column-6 {

@@ -9,6 +9,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.1",
     "axios": "^0.19.2",
+    "jquery": "^3.6.1",
     "roboto-fontface": "*",
     "vue": "^2.6.11",
     "vue-pdf": "^4.1.0",
@@ -22,7 +23,6 @@
     "material-design-icons-iconfont": "^4.0.5",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.1",
-    "tailwindcss": "^3.1.5",
     "vue-cli-plugin-vuetify": "^0.5.0",
     "vue-template-compiler": "^2.6.11",
     "vuetify-loader": "^1.6.0"

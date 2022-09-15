@@ -58,9 +58,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-.container {
-  padding: 20px;
-}
+
 .container1 {
   padding: 30px;
 }
@@ -161,10 +159,6 @@ p{
   .column-66,
   .column-33 {
     width: 100%;
-    text-align: center;
-  }
-  .column-333 {
-    width: 70%;
     text-align: center;
   }
   .column-3333 {
