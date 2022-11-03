@@ -49,7 +49,53 @@
         </div>
       </div>
     </div>
-
+    <div class="row marginsCards">
+        <div class="Newcard salavelacion">
+          <div class="Newheader salavelacion">
+            <h1 class="title">Salas de Velación</h1>
+              <div class="img-box">
+                <img src="../assets/logojardinesarmenia.png" style="float: left; width: 38px">
+              </div>
+          </div>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing it amet it...
+            </p>
+            <a href="Servicios-Sala-Velacion" class="btn-link">Read More...</a>
+          </div>
+        </div>
+        <div class="Newcardo">
+          <div class="Newheadero">
+            <h1 class="title">Oficina Principal</h1>
+              <div class="img-box">
+                <img src="../assets/logojardinesarmenia.png" style="float: left; width: 38px">
+              </div>
+          </div>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing it amet it...
+            </p>  
+            <a href="Sede-administrativa" class="btn-link">Read More...</a>
+          </div>
+        </div>
+        <div class="Newcardc">
+          <div class="Newheaderc">
+            <h1 class="title">Parque Cementerio</h1>
+              <div class="img-box">
+                <img src="../assets/logojardinesarmenia.png" style="float: left; width: 38px">
+              </div>
+          </div>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing it amet it...
+            </p>  
+            <a href="Servicios-Parque-Cementerio" class="btn-link">Read More...</a>
+          </div>
+        </div>
+      </div>
     <!-- MISIÓN, VISIÓN, VALORES CORPORATIVOS, NUESTRA HISTORIA -->
     
     <div class="container">
@@ -130,7 +176,7 @@
             <strong>CONTINUAR LEYENDO</strong>
           </v-btn>
         </div>
-        <div class="column-33">
+        <div class="imgNuestraH">
           <v-img :src="require('@/assets/personal.png')" class="img1"></v-img>
         </div>
       </div>
@@ -180,10 +226,125 @@ export default {
 .fade:hover
 {
         opacity:1;
+        text-decoration: none !important;
 }
-.f{
-  text-decoration: none !important;
+/* Card con Hover */
+.marginsCards{
+  justify-content: center;
 }
+.Newcard, .Newcardc, .Newcardo{
+  margin: 15px;
+  width: 300px;
+  height: 120px;
+  border-radius: 10px;
+  transition: all .5s;
+  box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+             -15px -15px 30px rgba(60, 60, 60, 0.082);
+  text-align: center;
+  overflow: hidden;
+}
+
+.Newcard:hover, .Newcardc:hover, .Newcardo:hover{
+  height: 254px;
+  background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+}
+
+.Newcard .Newheader {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/fondoSalasdeVelacion.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 16px;
+}
+
+.Newcardc .Newheaderc {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/cementerio.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 16px;
+}
+.Newcardo .Newheadero {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/admin1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 16px;
+}
+
+.Newcard .Newheader .img-box, .Newcardc .Newheaderc .img-box, .Newcardo .Newheadero .img-box {
+  width: 50px;
+}
+
+.Newcard .Newheader .title, .Newcardc .Newheaderc .title , .Newcardo .Newheadero .title{
+  font-size: 1.1em;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 4px 0 14px 0;
+  transition: all .5s;
+  color: #edededc5;
+
+}
+
+.Newcard:hover .Newheader, .Newcardc:hover .Newheaderc, .Newcardo:hover .Newheadero {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.Newcard:hover .Newcard .header .title, .Newcardc:hover .Newcardc .header .title, .Newcardo:hover .Newcardo .header .title {
+  padding: 0;
+}
+.title{
+  color:#666666;
+}
+
+.Newcard .content, .Newcardc .content, .Newcardo .content {
+  display: block;
+  text-align: justify;
+  color: #212121;
+  margin: 0 18px;
+}
+
+.Newcard .content p, .Newcardc .content p, .Newcardo .content p {
+  transition: all .5s;
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+.Newcard .content a, .Newcardc .content a, .Newcardo .content a {
+  color: #1d8122;
+  cursor: pointer;
+  transition: all .5s;
+  font-size: .8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.Newcard .content .btn-link:hover, .Newcardc .content .btn-link:hover, .Newcardo .content .btn-link:hover {
+  border-bottom: 1px solid #1d8122;
+}
+/* Nuestr historia */
+.imgNuestraH{
+  float: left;
+  width: 33.33333%;
+  padding: 0px 13px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
 @media screen and (max-width: 1000px) {
   .column-33 {
     width: 103%;

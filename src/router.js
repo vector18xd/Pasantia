@@ -15,7 +15,6 @@ import ServicioExequial from './views/ServicioExequial';
 import InfoUniduelo from './views/InfoUniduelo';
 import TitulosPrevision from './views/TitulosPrevision';
 import Exhumacion from './views/Exhumacion';
-import Psicologos from './views/Psicologos';
 import Memorial from './views/Memorial';
 import InformacionInteres from './views/InformacionInteres';
 import usuarioniño from './views/usuarioniño';
@@ -133,10 +132,6 @@ const router= new Router({
         {
           path: 'Servicio_Inhumacion',
           component: Inhumacion
-        },
-        {
-          path: 'Psicologos',
-          component: Psicologos
         },
         {
           path: 'Memorial',

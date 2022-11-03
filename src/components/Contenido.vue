@@ -10,7 +10,7 @@
     
     <div class="respons" >
       <div class="row">
-        <div class="column-33">
+        <div class="column-33 centrarImagen">
           <v-img :src="require('@/assets/elegirnos.png')" class="imagen"></v-img>
         </div>
         <div class="column-66">
@@ -75,7 +75,7 @@
             <v-btn class="fboton elevation-8" to="productsandservices">
               <strong>SABER MÁS</strong>
             </v-btn>
-          </v-card>
+          </v-card> 
         </div>
 
          <div class="column-333 grow">
@@ -119,6 +119,38 @@
             <h4>PARQUE CEMENTERIO JARDINES DE ARMENIA</h4>
           </h1>
           </a>
+        </div>
+      </div>
+      <div class="row marginsCards">
+        <div class="Newcard salavelacion">
+          <div class="Newheader salavelacion">
+            <h1 class="title">Salas de Velación</h1>
+              <div class="img-box">
+                <img src="../assets/logojardinesarmenia.png" style="float: left; width: 38px">
+              </div>
+          </div>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing it amet it...
+            </p>
+            <a href="Servicios-Sala-Velacion" class="btn-link">Read More...</a>
+          </div>
+        </div>
+        <div class="Newcardc">
+          <div class="Newheaderc">
+            <h1 class="title">Parque Cementerio</h1>
+              <div class="img-box">
+                <img src="../assets/logojardinesarmenia.png" style="float: left; width: 38px">
+              </div>
+          </div>
+          <div class="content">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur
+              adipiscing it amet it...
+            </p>  
+            <a href="Servicios-Parque-Cementerio" class="btn-link">Read More...</a>
+          </div>
         </div>
       </div>
     </div>
@@ -265,6 +297,9 @@ img {
 .grow:hover {
   transform: scale(1.02);
 }
+.centrarImagen{
+  align-items: center;
+}
 .imgslider{
   height: 302px;
 }
@@ -278,10 +313,107 @@ p{
 } */
 .respons {
   width: 85%;
+  width: 85%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+/* Card con Hover */
+.marginsCards{
+  justify-content: center;
+}
+.Newcard, .Newcardc{
+  margin: 15px;
+  width: 300px;
+  height: 120px;
+  border-radius: 10px;
+  transition: all .5s;
+  box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+             -15px -15px 30px rgba(60, 60, 60, 0.082);
+  text-align: center;
+  overflow: hidden;
+}
+
+.Newcard:hover, .Newcardc:hover{
+  height: 254px;
+  background: linear-gradient(360deg, #edededc5 60%, hsla(0, 0%, 13%, 1) 70%);
+}
+
+.Newcard .Newheader {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/fondoSalasdeVelacion.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 16px;
+}
+
+.Newcardc .Newheaderc {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/cementerio.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 16px;
+}
+
+.Newcard .Newheader .img-box, .Newcardc .Newheaderc .img-box {
+  width: 50px;
+}
+
+.Newcard .Newheader .title, .Newcardc .Newheaderc .title {
+  font-size: 1.1em;
+  letter-spacing: .1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 4px 0 14px 0;
+  transition: all .5s;
+  color: #edededc5;
+
+}
+
+.Newcard:hover .Newheader, .Newcardc:hover .Newheaderc {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 96%);
+}
+
+.Newcard:hover .Newcard .header .title, .Newcardc:hover .Newcardc .header .title {
+  padding: 0;
+}
+.title{
+  color:#666666;
+}
+
+.Newcard .content, .Newcardc .content {
+  display: block;
+  text-align: justify;
+  color: #212121;
+  margin: 0 18px;
+}
+
+.Newcard .content p, .Newcardc .content p {
+  transition: all .5s;
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+.Newcard .content a, .Newcardc .content a {
+  color: #1d8122;
+  cursor: pointer;
+  transition: all .5s;
+  font-size: .8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.Newcard .content .btn-link:hover, .Newcardc .content .btn-link:hover {
+  border-bottom: 1px solid #1d8122;
 }
 @media screen and (max-width: 1000px) {
   .Contentrow{
@@ -293,9 +425,8 @@ p{
     text-align: center;
   }
   .column-333 {
-    width: 70%;
+    width: 100%;
     text-align: center;
-    height: 100%;
   }
   .column-3333 {
     width: 88%;
@@ -312,3 +443,4 @@ p{
   height: 302px;
 }
 </style>
+

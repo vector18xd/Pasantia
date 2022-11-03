@@ -1,25 +1,22 @@
 <template>
   <div>
-   
-   <!-- SERVICIOS PARQUE CEMENTERIO -->
+<!-- SERVICIOS PARQUE CEMENTERIO -->
     <div >
       <h1 class="large-font" style="color:#12A19B;">
         <h4>Planes de Proteccion Familiares o Grupales</h4>
       </h1>
       <p style="font-size: 24px; color: #666">
         <span>Entre nuestros servicios podrá contar con:</span>
-      </p>
-     
+      </p>     
     </div>
 
     <br>
     <br>
-
     <!-- CARDS SERVICIOS -->
     <div>
-      <div class="row">
-        <div class="column-333 grow cardP">
-          <v-card class="card-estilo elevation-18">
+      <div class="rowP">
+        <div class="cardP">
+          <v-card class="card-estilo cardMarginT elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/Imagen1.png" alt="avatar" />
             </v-avatar>
@@ -38,8 +35,8 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow cardP">
-          <v-card class="card-estilo elevation-18">
+        <div class="cardP">
+          <v-card class="card-estilo cardMarginT elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/rosa.png" alt="avatar" />
             </v-avatar>
@@ -58,8 +55,8 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow cardP">
-          <v-card class="card-estilo elevation-18">
+        <div class="cardP">
+          <v-card class="card-estilo cardMarginT elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/girasol.png" alt="avatar" />
             </v-avatar>
@@ -77,8 +74,9 @@
             </v-btn>
           </v-card>
         </div>
-        <div class="column-333 grow cardP">
-          <v-card class="card-estilo elevation-18">
+
+        <div class="cardP">
+          <v-card class="card-estilo cardMarginT elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/orquidea.png" alt="avatar" />
             </v-avatar>
@@ -96,8 +94,8 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow cardP">
-          <v-card class="card-estilo elevation-18">
+        <div class="cardP">
+          <v-card class="card-estilo cardMarginT elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/sacerdotal.jpg" alt="avatar" />
             </v-avatar>
@@ -116,8 +114,8 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow cardP">
-          <v-card class="card-estilo elevation-18">
+        <div class="cardP">
+          <v-card class="card-estilo cardMarginT elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/diocesanas.png" alt="avatar" />
             </v-avatar>
@@ -126,16 +124,17 @@
                 <p>
                   Plan diseñado para cubrir a todos  los trabajadores de las entidades diocesanas y parroquiales.
                 </p>
-                <div style="padding: 1.7px"><p>PLAN PROTECCION DIOCESANAS Y PARROQUIALES.</p></div>
+                <div><p>PLAN PROTECCION DIOCESANAS Y PARROQUIALES.</p></div>
               </div>
             </v-card-title>
             <v-btn class="fboton elevation-8" to="plandiocesanasyparroquias">
               <strong>SABER MÁS</strong>
             </v-btn>
-          </v-card>
+          </v-card> 
         </div>
-        <div class="column-333 grow cardP">
-          <v-card class="card-estilo elevation-18">
+
+        <div class="cardP">
+          <v-card class="card-estilo  cardMarginT elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/multiplan.png" alt="avatar" />
             </v-avatar>
@@ -145,6 +144,7 @@
                   Plan diseñado para usted y su familia integre un plan de protección según su necesidad.
                 </p>
                 <h4><br></h4>
+                <br>
                 <div style="padding: 1.7px"><p>PLAN PROTECCION MULTIPLAN.</p></div>
               </div>
             </v-card-title>
@@ -154,8 +154,8 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow cardP">
-          <v-card class="card-estilo elevation-18">
+        <div class="cardP">
+          <v-card class="card-estilo cardMarginT elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/permanencia.png" alt="avatar" />
             </v-avatar>
@@ -203,8 +203,8 @@ export default {};
 }
 
 .container2{
-   padding: 20px;
-    width: 85%;
+  padding: 20px;
+  width: 85%;
 }
 .img2 {
   width: 380px !important;
@@ -219,8 +219,8 @@ export default {};
   box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.36);
 }
 .positionbtn{
- margin-right: 45px;
- margin-bottom: 45px;
+  margin-right: 45px;
+  margin-bottom: 45px;
 }
 .widthCard {
   width: 90% !important;
@@ -228,13 +228,21 @@ export default {};
 .borde{ 
     border: solid 1px #E8AC09 !important;
 }
-.row{
+.rowP{
     display: flex;
     align-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .cardP{
-  padding: 15px;
+  padding: 15px; 
+  width: 30rem;
+  height: 32rem;
+}
+.cardMarginT{
+  width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 1000px) {
   .column-6 {

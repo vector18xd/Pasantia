@@ -24,9 +24,9 @@
 
     <!-- CARDS SERVICIOS -->
     <div>
-      <div class="row">
-        <div class="column-333 grow cardT">
-          <v-card class="card-estilo elevation-18">
+      <div class="rowCardsTS">
+        <div class="cardsTS">
+          <v-card class="card-estilo elevation-18 cardTS">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/aliados.png" alt="avatar" />
             </v-avatar>
@@ -35,7 +35,7 @@
                 <p>
                   Diseñado para las familias que solo necesitan el servicio exequial.
                 </p>
-                <div style="padding: 1.7px"><p>TITULO TULIPAN.</p></div>
+                <div style="padding: 13.7px"><p>TITULO TULIPAN.</p></div>
               </div>
             </v-card-title>
             <v-btn class="fboton elevation-8" to="titulotulipan">
@@ -44,8 +44,8 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow cardT">
-          <v-card class="card-estilo elevation-18">
+        <div class="cardsTS">
+          <v-card class="card-estilo elevation-18 cardTS">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/aliados.png" alt="avatar" />
             </v-avatar>
@@ -63,8 +63,8 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow cardT">
-          <v-card class="card-estilo elevation-18">
+        <div class="cardsTS">
+          <v-card class="card-estilo elevation-18 cardTS">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/aliados.png" alt="avatar" />
             </v-avatar>
@@ -110,8 +110,8 @@ export default {};
 }
 
 .container2{
-   padding: 20px;
-    width: 85%;
+  padding: 20px;
+  width: 85%;
 }
 
 .img2 {
@@ -127,23 +127,35 @@ export default {};
   box-shadow: 0px 0px 16px 1px rgba(0,0,0,0.36);
 }
 .positionbtn{
- margin-right: 45px;
- margin-bottom: 45px;
+  margin-right: 45px;
+  margin-bottom: 45px;
 }
 .widthCard {
   width: 90% !important;
 }
+.cardsTS{
+  width: 30rem;
+  padding: 15px;
+  height: 33rem;
+}
+.cardTS{
+  height: 90%;
+}
+.rowCardsTS{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .borde{ 
     border: solid 1px #E8AC09 !important;
 }
-
 @media screen and (max-width: 1000px) {
   .column-6 {
     width: 103%;
     text-align: center;
   }
-  .cardT{
-    height: 28rem;
+  .cardsTS{
+    width: 26rem;
   }
   .img {
     margin: auto;
@@ -155,6 +167,10 @@ export default {};
   }
   .widthCard {
     width: none;
+  }
+  .rowCardsTS{
+    flex-direction: column;
+    align-items: normal
   }
 }
 </style>
