@@ -56,18 +56,15 @@
         </v-tab>
       </v-tabs>
     </div>
-    <h1>{{index}}</h1>
-    
       <br>
       <br>
-      
     <!-- CARDS  -->
     <div v-show="index === 0">
       <h4 align="center" style="font-size: 25px; color:#12A19B">
         <span> Información según el tipo de usuario<br /> </span>
       </h4>
       <div class="row cardsInfoUs">
-        <div class="column-333 grow">
+        <div class="informacionUs">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/nosotros.png" alt="avatar" />
@@ -86,7 +83,7 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow">
+        <div class="informacionUs">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/planesyservicios.png" alt="avatar" />
@@ -105,7 +102,7 @@
           </v-card>
         </div>
 
-        <div class="column-333 grow">
+        <div class="informacionUs">
           <v-card class="card-estilo elevation-18">
             <v-avatar size="150" style="margin-top: 10px">
               <img src="../assets/logouniduelo.png" alt="avatar" />
@@ -135,7 +132,7 @@
       <div class="cardsP">
       <div class="cardPs">
           <div class="card-avatar"></div>
-          <div class="cardP-info">
+          <div class="cardPs-info">
             <p class="titleP">Adriana Botina</p>
             <p class="subtitleP">Psicóloga</p>
           </div>
@@ -145,7 +142,7 @@
       </div>
       <div class="cardPs">
           <div class="card-avatar1"></div>
-          <div class="cardP-info">
+          <div class="cardPs-info">
             <p class="titleP">Ruby Pardo Lozano</p>
             <p class="subtitleP">Psicóloga</p>
           </div>
@@ -154,45 +151,6 @@
           </div>
       </div>
       </div>
-      <!-- <div class="row">
-        
-        <div class="column-333 grow">
-        
-x          <v-card class="card-estilo elevation-18">
-            <v-avatar size="150" style="margin-top: 10px">
-              <img src="../assets/adriana.jpg" alt="avatar">
-            </v-avatar>
-            <v-card-title primary-title>
-              <div>
-                <h3 class="headline mb-0" style="color:#12A19B;">
-                  <h4>Adriana Botina Echeverry</h4>
-                </h3>
-                <div
-                  style="padding: 1.7px"
-                ><p>Nuestro propósito es la prestación de servicios funerarios con el diferencial de ofrecer un servicio integro teniendo en cuenta la calidez humana, acompañamiento espiritual, pastoral de la consolación y de la esperanza y dignos rituales.</p></div>
-              </div>
-            </v-card-title>
-          </v-card>
-        </div>
-  
-        <div class="column-333 grow">
-          <v-card class="card-estilo elevation-18">
-            <v-avatar size="150" style="margin-top: 10px">
-              <img src="../assets/ruby.jpg" alt="avatar">
-            </v-avatar>
-            <v-card-title primary-title>
-              <div>
-                <h3 class="headline mb-0" style="color:#12A19B;">
-                  <h4>Ruby Pardo Lozano</h4>
-                </h3>
-                <div
-                  style="padding: 1.7px"
-                ><p>Nuestro propósito es la prestación de servicios funerarios con el diferencial de ofrecer un servicio integro teniendo en cuenta la calidez humana, acompañamiento espiritual, pastoral de la consolación y de la esperanza y dignos rituales.</p></div>
-              </div>
-            </v-card-title>
-          </v-card>
-        </div>
-      </div> -->
       <br>
     </div>
     <div id="Memorial" v-show="index === 2">
@@ -219,10 +177,10 @@ x          <v-card class="card-estilo elevation-18">
               color="#12a19b"
               v-model="search"
               append-icon="search"
+              ></v-text-field>
               label="Buscar"
               single-line
               hide-details
-              ></v-text-field>
             </v-card-title>
           <v-data-table
             :headers="headers"
@@ -556,11 +514,19 @@ img {
 p{
   color: #70706e;
 }
-.cardsInfoUs{
-  width: 80rem;
+
+.informacionUs{
+  width: 22%;
+  padding: 15px;
 }
+
 /* CardPsicologos */
-.cardsPs{
+.cardsInfoUs{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cardsP{
   display: flex;
   justify-content: center;
 }
@@ -577,9 +543,11 @@ p{
   color: var(--maindark);
   border-radius: 8px;
   animation: appear16123 0.3s linear forwards;
+  flex-direction: column;
+  align-items: center;
 }
 .card-avatar{
-  margin-left: 18px;
+  margin-top: 8px;
   width: 72%;
   position: absolute;
   background: url("../assets/adriana.jpg");
@@ -590,7 +558,7 @@ p{
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
 }
 .card-avatar1{
-  margin-left: 18px;
+  margin-top: 8px;
   width: 72%;
   position: absolute;
   background: url("../assets/ruby.jpg");
@@ -615,6 +583,7 @@ p{
 }
 
 .cardPs-info {
+  margin-left: 28px;
   bottom: 0;
   position: absolute;
   width: 100%;
@@ -632,6 +601,7 @@ p{
 }
 
 .cardP-bio p {
+  margin-bottom: -14rem;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5em;
@@ -662,7 +632,7 @@ p{
   background-color: rgba(80, 64, 44, 0.25);
 }
 
-.cardPs:hover .cardP-info {
+.cardPs:hover .cardPs-info {
   transform: translateX(-100%);
 }
 .cardPs:hover .card-avatar, .cardPs:hover .card-avatar1{
@@ -696,6 +666,13 @@ p{
   list-style: decimal;
 }
 @media screen and (max-width: 1000px) {
+  .informacionUs{
+    width: 80%;
+  }
+  .cardsInfoUs{
+    flex-direction: column;
+    align-items: center;
+  }
   .column-6 {
     width: 103%;
     text-align: center;
