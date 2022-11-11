@@ -121,7 +121,7 @@
           </a>
         </div>
       </div>
-      <div class="row marginsCards">
+      <div class="marginsCards">
         <div class="Newcard salavelacion">
           <div class="Newheader salavelacion">
             <h1 class="title">Salas de Velación</h1>
@@ -321,7 +321,10 @@ p{
 }
 /* Card con Hover */
 .marginsCards{
+  display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .Newcard, .Newcardc{
   margin: 15px;
@@ -438,9 +441,13 @@ p{
   .slider{
     display: none;
   }
+  .marginsCards{
+  flex-direction: column;
+  }
 }
 .v-carousel__item{
   height: 302px;
 }
+
 </style>
 
